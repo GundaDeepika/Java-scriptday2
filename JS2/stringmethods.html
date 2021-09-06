@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //toUpperCase
+        var sentence='This is the Javascript,stringsmethod class';
+        document.write(sentence.toUpperCase());
+
+        //toLowerCase
+        var sentence='This is the Javascript,stringsmethod class';
+        document.write(sentence.toLowerCase());
+
+        //charAt()
+        var sentence='This is the Javascript,stringsmethod class';
+        //var index = 10;
+        //document.write(`The character at index ${index} is ${sentence.charAt(index)}`);
+        document.write(sentence.charAt(5));
+        
+        //indexOf(searchString, position)
+        var sentence='This is the Javascript,stringsmethod class';
+        var searchString = "class";
+        var indexofclass = sentence.indexOf(searchString);
+        document.write(`The index of the "${searchString}" is ${indexofclass}`);
+
+        //concat(string)
+        var sen = 'Welcome! ';
+        var sentence='This is the Javascript,stringsmethod class';
+        document.write(sen.concat(' ', sentence));
+        document.write(sen.concat(', ', sentence));
+
+        //replace()
+        var sentence='This is the Javascript,stringsmethod class';
+        document.write(sentence.replace('class', 'session'));
+
+        //split(separator, limit)
+        var sentence='This is the Javascript stringsmethod class';
+        var split = sentence.split(" ", 5);
+        document.write(split);
+
+        //substr(start, length)
+        var name = "DeepikaGunda";
+        document.write(name.substr(3,7));        //epik
+        document.write(name.substr(7));          //Gunda
+
+        //search(value)
+        var sentence='This is the Javascript stringsmethod class';
+        var value = "a";
+        document.write(sentence.search(value));
+
+        //trim()
+        var sentence='  This is the Javascript stringsmethod class ';
+        console.log(sentence.trim());
+        document.write(sentence);
+    </script>
+</body>
+</html>
